@@ -1,0 +1,11 @@
+addons:
+  apt:
+    sources:
+    - ubuntu-toolchain-r-test
+    packages:
+    - libstdc++-7-dev
+
+script:
+  - qmake
+  - make
+  - ./travis_clang_cpp17
